@@ -1,0 +1,71 @@
+# ============================
+# Python 通用
+# ============================
+# 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+venv/
+.env
+Pipfile.lock
+
+# 日志
+logs/
+*.log
+
+# 单元测试和覆盖率
+htmlcov/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# ============================
+# 编辑器 & IDE
+# ============================
+# VSCode
+.vscode/
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# ============================
+# 系统文件
+# ============================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# ============================
+# 数据 & 模型文件（可选）
+# ============================
+# 如果项目中有大文件夹，如 data/、models/，可以加上：
+data/
+models/
+
+# ============================
+# 其它
+# ============================
+# 临时文件
+*.tmp
+*.swp
+
+# 配置文件
+config.yaml
+
+# 结果文件
+results/
+
+data_collection/
+
+help.py
+
+flash_attn*
+
+methods/cot_diff.py
