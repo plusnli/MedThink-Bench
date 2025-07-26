@@ -1,4 +1,10 @@
-# 🌟 MedQA_Reasoning
+<div align="center">
+
+<h1>🌟 MedThink-Bench</h1>
+
+<h3> <a href="https://arxiv.org/abs/2507.07988">Automating Expert-Level Medical Reasoning Evaluation of Large Language Models</a> </h3>
+
+</div>
 
 ## 📂 File Usage
 - **main.py**: The main entry point of the program.
