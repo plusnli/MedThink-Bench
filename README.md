@@ -70,3 +70,16 @@ Evaluation results will be saved in the `logs/` directory as:
 
 * `eval_result_*.json` or `.xlsx` – detailed results
 * `eval_summary_*.json` – metric summary
+
+
+## 📚 Citation
+If you find this work useful for your research, please cite our paper:
+
+```bibtex
+@article{zhou2025automating,
+  title={Automating Expert-Level Medical Reasoning Evaluation of Large Language Models},
+  author={Zhou, Shuang and Xie, Wenya and Li, Jiaxi and Zhan, Zaifu and Song, Meijia and Yang, Han and Espinoza, Cheyenna and Welton, Lindsay and Mai, Xinnie and Jin, Yanwei and others},
+  journal={arXiv preprint arXiv:2507.07988},
+  year={2025}
+}
+```
