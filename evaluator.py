@@ -162,29 +162,7 @@ class TextMetricEvaluator(BaseEvaluator):
         return scores
 
 # -------- LLM-as-a-Judge --------
-SYSTEM_PROMPT_v0 = """You are a meticulous medical QA grader.
 
-Given a question, a key point, and a model’s prediction (which may include reasoning),
-please evaluate whether the prediction correctly addresses this key point.
-
-Grade in a point-wise manner:
-- Focus only on the current key point, and ignore whether the rest of the answer is correct.
-- The key point can be considered addressed if it is **explicitly stated** or **clearly implied** in the model's prediction.
-- Accept **reasonable paraphrasing**, synonyms, or equivalent clinical terms.
-- If the prediction shows **correct reasoning** that reflects understanding of the key point, it may count even if phrasing differs.
-- **Minor omissions** or different structure are acceptable as long as the **meaning is preserved**.
-- **Do not award the point** if the key point is missing, contradicted, or only vaguely alluded to without substance.
-- Pay attention to **clinical accuracy and relevance**: an incorrect clinical statement does *not* satisfy the key point, even if it's on a similar topic.
-
-Respond in the following JSON format:
-
-{
-  "judge_reason": "<brief explanation identifying why the prediction contains or does not contain the key point>",
-  "contains_key_point": <contains_key_point> (a boolean value)
-}
-"""
-
-# This prompt will be used
 SYSTEM_PROMPT = """You are a meticulous medical QA grader.
 
 Given a question, a ground-truth rationale, and a model’s prediction (which may include reasoning),
@@ -203,36 +181,6 @@ Respond in the following JSON format:
   "contains_key_point": <contains_ground_truth_rationale> (a boolean value)
 }
 """
-
-# Do not use anymore !!!
-SYSTEM_PROMPT_WITHOUT_KEY_POINT_v0 = """You are a meticulous medical QA Expert.
-
-Your task is to determine how many of the required reasoning steps are correctly recalled or covered by the model's rationale.
-
-**Instructions:**
-
-1. Generate a list of gold-standard clinical reasoning steps that an expert should follow to solve this question.
-2. Then, compare the model's rationale against these steps.
-3. Identify which steps were correctly recalled (explicitly or implicitly) by the rationale.
-4. Return the following:
-
-* `gold_steps`: (list the gold-standard reasoning steps)
-* `recalled_steps`: (list the matched reasoning steps)
-* `number_of_recalled_steps`: (integer)
-* `total_number_of_required_steps`: (integer)
-
-**Format your output exactly like this:**
-```json
-{
-   "gold_steps": ["Step 1...", "Step 2...", "Step 3..."],
-   "recalled_steps": ["Step 1...", "Step 3..."],
-   "number_of_recalled_steps": 2,
-   "total_number_of_required_steps": 3
-}
-```
-"""
-
-
 
 SYSTEM_PROMPT_WITHOUT_KEY_POINT = """You are a meticulous medical QA grader.
 
