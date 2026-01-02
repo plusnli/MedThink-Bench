@@ -1,21 +1,21 @@
 # ============================
-# Python 通用
+# Python General
 # ============================
-# 缓存文件
+# Cache files
 __pycache__/
 *.py[cod]
 *$py.class
 
-# 虚拟环境
+# Virtual environments
 venv/
 .env
 Pipfile.lock
 
-# 日志
+# Logs
 logs/
 *.log
 
-# 单元测试和覆盖率
+# Unit test and coverage reports
 htmlcov/
 .coverage
 .coverage.*
@@ -23,7 +23,7 @@ htmlcov/
 .pytest_cache/
 
 # ============================
-# 编辑器 & IDE
+# Editors & IDE
 # ============================
 # VSCode
 .vscode/
@@ -33,7 +33,7 @@ htmlcov/
 *.iml
 
 # ============================
-# 系统文件
+# System files
 # ============================
 # macOS
 .DS_Store
@@ -43,29 +43,14 @@ Thumbs.db
 ehthumbs.db
 
 # ============================
-# 数据 & 模型文件（可选）
+# Others
 # ============================
-# 如果项目中有大文件夹，如 data/、models/，可以加上：
-data/
-models/
-
-# ============================
-# 其它
-# ============================
-# 临时文件
+# Temporary files
 *.tmp
 *.swp
 
-# 配置文件
+# Configuration files
 config.yaml
-
-# 结果文件
-results/
-
-data_collection/
-
-help.py
 
 flash_attn*
 
-methods/cot_diff.py
