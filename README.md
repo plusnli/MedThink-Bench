@@ -2,7 +2,7 @@
 
 <h1>🌟 MedThink-Bench</h1>
 
-<h3> <a href="[https://arxiv.org/abs/2507.07988](https://www.nature.com/articles/s41746-025-02208-7)">Automating Expert-Level Medical Reasoning Evaluation of Large Language Models</a> </h3>
+<h3> <a href="https://www.nature.com/articles/s41746-025-02208-7">Automating Expert-Level Medical Reasoning Evaluation of Large Language Models</a> </h3>
 
 </div>
 
