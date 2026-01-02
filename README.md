@@ -2,7 +2,7 @@
 
 <h1>🌟 MedThink-Bench</h1>
 
-<h3> <a href="https://arxiv.org/abs/2507.07988">Automating Expert-Level Medical Reasoning Evaluation of Large Language Models</a> </h3>
+<h3> <a href="[https://arxiv.org/abs/2507.07988](https://www.nature.com/articles/s41746-025-02208-7)">Automating Expert-Level Medical Reasoning Evaluation of Large Language Models</a> </h3>
 
 </div>
 
@@ -83,9 +83,10 @@ If you find this work useful for your research, please cite our paper:
 
 ```bibtex
 @article{zhou2025automating,
-  title={Automating Expert-Level Medical Reasoning Evaluation of Large Language Models},
+  title={Automating expert-level medical reasoning evaluation of large language models},
   author={Zhou, Shuang and Xie, Wenya and Li, Jiaxi and Zhan, Zaifu and Song, Meijia and Yang, Han and Espinoza, Cheyenna and Welton, Lindsay and Mai, Xinnie and Jin, Yanwei and others},
-  journal={arXiv preprint arXiv:2507.07988},
-  year={2025}
+  journal={npj Digital Medicine},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
 }
 ```
